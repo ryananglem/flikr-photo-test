@@ -2,6 +2,11 @@
 
 This is small web application to display a grid of photos from flikr.  
  
+After cloning repo 
+
+`npm install`
+`npm start` 
+ 
 When a photo is clicked, the photo displays in a larger size with its tags and title. 
 
 It uses react and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) 
