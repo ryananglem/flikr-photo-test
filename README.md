@@ -1,3 +1,5 @@
+##flikr-photo-test
+
 This is small web application to display a grid of photos from flikr.  
  
 When a photo is clicked, the photo displays in a larger size with its tags and title. 
