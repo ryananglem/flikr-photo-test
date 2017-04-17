@@ -1,5 +1,5 @@
-//import {getImageData} from '../api/photoFeed'
-import {getImageData} from '../api/static/photoFeed'
+import {getImageData} from '../api/photoFeed'
+//import {getImageData} from '../api/static/photoFeed'
 
 export const requestImages = () => ({
     type: "REQUEST_IMAGES",
@@ -19,10 +19,10 @@ export const getImagesError = error => ({
     error
 });
 
-export const getImages = () => {
+export const getImages = (page) => {
     return (dispatch) => {
         dispatch(requestImages());
-        return getImageData()
+        return getImageData(page)
             .then((imagedata) => {
                 dispatch(receiveImages(imagedata))
             }).catch((err)=> {

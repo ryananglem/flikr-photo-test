@@ -15,8 +15,8 @@ const Photos = ({gallery, onClickPhoto, loadMore, onClosePhoto, largePhoto, phot
                 <div className={"largePhoto" + (photoOpened===false ? " hidden" : "") }>
                     <PhotoDetails photo={largePhoto} onClose={onClosePhoto}/>
                 </div>
-                <div>
-                    <button onClick={loadMore}> load more..</button>
+                <div className="actions">
+                    <button className="button" onClick={loadMore}> load more..</button>
                 </div>
                 {photoList}
             </div>

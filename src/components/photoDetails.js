@@ -11,7 +11,8 @@ const PhotoDetails = ({photo, onClose}) => {
             <div className="photoDetails">
             <span className="photoTitle">{photo.title}</span> <br/>
             <span className="photoDate">Date taken: {photo.date_taken.substring(0, photo.date_taken.indexOf("T"))} </span> <br/>
-            <PhotoTags tags={photo.tags.split(" ")}/>
+            <div style={{ textAlign: 'center'}}><PhotoTags tags={photo.tags.split(" ")}/>
+            </div>
             </div>
         </div>
     )

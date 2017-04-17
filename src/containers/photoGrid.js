@@ -10,6 +10,7 @@ class PhotoGrid extends Component {
         this.retrievePhotoFeed=this.retrievePhotoFeed.bind(this);
         this.closeDetails=this.closeDetails.bind(this);
         this.state = {
+            nextImagePageNumber: 2,
             photoOpened: false,
             largePhoto: {  title: "",
                            link: "",
@@ -26,11 +27,11 @@ class PhotoGrid extends Component {
         this.setState({photoOpened: false});
     }
     retrievePhotoFeed() {
-        this.props.getImages();
+        this.props.getImages(this.state.nextImagePageNumber);
+        this.setState({nextImagePageNumber: this.state.nextImagePageNumber+1});
     }
     render () {
         return (
-            <div>
              <Photos
                 loadMore={this.retrievePhotoFeed}
                 gallery={this.props.images}
@@ -39,7 +40,6 @@ class PhotoGrid extends Component {
                 largePhoto={this.state.largePhoto}
                 photoOpened={this.state.photoOpened}
              />
-            </div>
         );
     }
 }
@@ -51,8 +51,8 @@ const mapStateToProps = (state) => {
  }
 const mapDispatchToEvents = (dispatch) => {
     return {
-        getImages: () => {
-            dispatch(getImages())
+        getImages: (page) => {
+            dispatch(getImages(page))
         }
     };
 };

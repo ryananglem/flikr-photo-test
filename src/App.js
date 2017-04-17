@@ -7,7 +7,7 @@ class App extends Component {
             return (
               <div className="App">
                   <h1>
-                      Flikr Feed Example
+                      Flickr Feed Example
                   </h1>
                   { this.props.children }
               </div>

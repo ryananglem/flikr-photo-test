@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const PhotoTags = ({tags}) => {
     return (
-        <div>
+        <div className="photoTags">
         { tags.map((tag) =>
             <div key={tag} className="photoTag">{tag}</div>
         )}

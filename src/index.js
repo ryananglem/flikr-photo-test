@@ -8,7 +8,6 @@ import App from './App';
 import PhotoGrid from './containers/photoGrid';
 
 import { BrowserRouter as Router, Route, browserHistory } from 'react-router-dom'
-import './index.css';
 import reducers from './reducers/getImageReducer'
 import { getImages} from './actions/getImageActions'
 

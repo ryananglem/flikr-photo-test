@@ -1,15 +1,47 @@
+body {
+  font-family: Arial;
+}
 .App {
   text-align: center;
 }
+.actions {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.button { /*bootstrap styling */
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
 .photoTag {
-  display: inline;
-  float:left;
+  display: inline-block;
   font-weight: bold;
   margin-left: 2px;
   margin-right: 2px;
   font-size: 11px;
   background-color: gainsboro;
+  text-align: center;
 }
+.photoTags {
+
+}
+
 .listPhoto {
   width: 100%;
 }
@@ -33,7 +65,7 @@
   text-align: center;
 }
 .largePhoto {
-  top: 30%;
+  top: 10%;
   left: 5%;
   width: 100%;
   height: 100%;
