@@ -1,18 +1,18 @@
-##flikr-photo-test
+## flikr-photo-test
 
 This is small web application to display a grid of photos from flikr.  
  
 When a photo is clicked, the photo displays in a larger size with its tags and title. 
 Clicking the 'load more..' button will retrieve more images
 
-####To Run:
+#### To Run:
 After cloning repo 
 
 `npm install`
 
 `npm start` 
 
-###Notes:
+### Notes:
 
 The app uses react and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) 
 using the recommendations and tooling (webpack, babel et al) provided therein, note that this includes not 
